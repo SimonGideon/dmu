@@ -5,7 +5,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-background dark:bg-darkBackground text-text dark:text-darkText flex w-full h-screen overflow-hidden">
       {isAuthenticated() && (
-        <div className="md:w-1/4 sticky top-0 h-screen overflow-y-auto">
+        <div className="md:w-1/4 sticky top-0 h-screen">
           <History />
         </div>
       )}
