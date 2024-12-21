@@ -16,9 +16,9 @@ if (subdomain === "local") {
   webSocketURL = `wss://${subdomain}api.staging.xeai.uk/ws/chat/`;
   hostDomain = `https://${subdomain}api.staging.xeai.uk`;
 } else {
-  baseURL = `https://${subdomain}api.staging.xeai.uk/api/v1/`;
-  webSocketURL = `wss://${subdomain}api.staging.xeai.uk/ws/chat/`;
-  hostDomain = `https://${subdomain}api.staging.xeai.uk`;
+  baseURL = `https://askbal.api.staging.xeai.uk/api/v1/`;
+  webSocketURL = `wss://askbal.api.staging.xeai.uk/ws/chat/`;
+  hostDomain = `https://askbal.api.staging.xeai.uk`;
 }
 
 // console.log(baseURL);
