@@ -12,13 +12,13 @@ if (subdomain === "local") {
   webSocketURL = "wss://rubyapi.staging.xeai.uk/ws/chat/";
   hostDomain = "https://rubyapi.staging.xeai.uk";
 } else if (!staging) {
-  baseURL = `https://${subdomain}api.staging.xeai.uk/api/v1/`;
-  webSocketURL = `wss://${subdomain}api.staging.xeai.uk/ws/chat/`;
-  hostDomain = `https://${subdomain}api.staging.xeai.uk`;
-} else {
   baseURL = `https://askbal.api.staging.xeai.uk/api/v1/`;
   webSocketURL = `wss://askbal.api.staging.xeai.uk/ws/chat/`;
   hostDomain = `https://askbal.api.staging.xeai.uk`;
+} else {
+  baseURL = `https://${subdomain}api.staging.xeai.uk/api/v1/`;
+  webSocketURL = `wss://${subdomain}api.staging.xeai.uk/ws/chat/`;
+  hostDomain = `https://${subdomain}api.staging.xeai.uk`;
 }
 
 // console.log(baseURL);
