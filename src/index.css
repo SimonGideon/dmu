@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #f9fafb;
+  --primary-color: #10b981;
+  --text-color: #111827;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+.markdown-body {
+  line-height: 1.6;
+  background-color: transparent !important;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Adjust min size */
+  gap: 12px; /* Space between items */
+}
+
+.masonry-item {
+  display: block;
+  break-inside: avoid;
+}
+
+/* .markdown-body ol li {
+  counter-reset: list-item;
+}
+
+.markdown-body ol li::before {
+  content: counter(list-item) ". ";
+  counter-increment: list-item;
+  font-weight: bold;
+} */

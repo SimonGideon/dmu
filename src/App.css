@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(40) 1s 1 normal both;
+  position: relative;
+}
