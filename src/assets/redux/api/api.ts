@@ -8,9 +8,12 @@ export let webSocketURL: string;
 export let hostDomain: string;
 
 if (subdomain === "local") {
-  baseURL = "https://rubyapi.staging.xeai.uk/api/v1/";
-  webSocketURL = "wss://rubyapi.staging.xeai.uk/ws/chat/";
-  hostDomain = "https://rubyapi.staging.xeai.uk";
+  baseURL = `https://askbalapi.staging.xeai.uk/api/v1/`;
+  webSocketURL = `wss://askbalapi.staging.xeai.uk/ws/chat/`;
+  hostDomain = `https://askbalapi.staging.xeai.uk`;
+  // baseURL = "https://rubyapi.staging.xeai.uk/api/v1/";
+  // webSocketURL = "wss://rubyapi.staging.xeai.uk/ws/chat/";
+  // hostDomain = "https://rubyapi.staging.xeai.uk";
 } else if (!staging) {
   baseURL = `https://askbalapi.staging.xeai.uk/api/v1/`;
   webSocketURL = `wss://askbalapi.staging.xeai.uk/ws/chat/`;
